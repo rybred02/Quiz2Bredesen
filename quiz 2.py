@@ -10,8 +10,7 @@ red_led = LED(23)
 green_led = LED(24)
 blue_led = LED(25)
 
-
-while True:
+def ButtonsAndCombinations():
 
     if buttonRed.is_pressed:
         red_led.on()  
@@ -31,5 +30,7 @@ while True:
     else:
         blue_led.off()
 
+while True:
+    ButtonsAndCombinations()
 
     time.sleep(0.1)
